@@ -5,6 +5,9 @@
 - clean: ['~']
 
 - link:
+    ~/.bash_profile:
+    ~/.gitconfig:
+    ~/.npmrc:
     ~/.zshrc:
 
 - shell:
