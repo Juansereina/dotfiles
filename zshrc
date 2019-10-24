@@ -74,8 +74,13 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-# Uses the zsh precmd function hook to set the tab title to the current working directory before each prompt
-function precmd () {
-    window_title="\\033]0;${PWD##*/}\\007"
-    echo -ne "$window_title"
+# Set the tab title to the current working directory before each prompt
+function tabTitle () {
+  window_title="\033]0;${PWD##*/}\007"
+  echo -ne "$window_title"
 }
+
+# Executes load-nvmrc when the present working directory (pwd) changes
+# add-zsh-hook chpwd load-nvmrc
+# Executes tabTitle before each prompt
+add-zsh-hook precmd tabTitle
