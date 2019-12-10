@@ -25,7 +25,10 @@ echo "installing homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "brew installing stuff"
-brew install git zsh
+# git version control
+# zsh tooling
+# gnupg GPG
+brew install git zsh gnupg
 
 echo "switch the default shell used in your terminal"
 sudo chsh -s /bin/zsh
