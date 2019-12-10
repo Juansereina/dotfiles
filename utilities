@@ -46,3 +46,9 @@ load-nvmrc() {
 # Add the above function when the present working directory (pwd) changes
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+######################################
+#            functions               #
+######################################
+
+killport() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
