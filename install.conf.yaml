@@ -12,6 +12,7 @@
     ~/.macos:
     ~/.npmrc:
     ~/.utilities:
+    ~/.ui_ux:
     ~/.zshrc:
 
 - shell:
