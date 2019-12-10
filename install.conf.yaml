@@ -5,11 +5,13 @@
 - clean: ['~']
 
 - link:
+    ~/.aliases:
     ~/.bashrc:
     ~/.gitconfig:
     ~/.hyper.js:
     ~/.macos:
     ~/.npmrc:
+    ~/.utilities:
     ~/.zshrc:
 
 - shell:
