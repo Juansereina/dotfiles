@@ -5,9 +5,10 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile:
+    ~/.bashrc:
     ~/.gitconfig:
     ~/.hyper.js:
+    ~/.macos:
     ~/.npmrc:
     ~/.zshrc:
 

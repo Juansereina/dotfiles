@@ -41,6 +41,9 @@ alias l='colorls --group-directories-first --almost-all'
 alias ll='colorls --group-directories-first --almost-all --long'
 alias lc='colorls -lA --sd'
 
+# Using colors configuration
+subl $(dirname $(gem which colorls))/dotfiles/dark_colors.yaml
+
 # Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -84,3 +87,9 @@ function tabTitle () {
 # add-zsh-hook chpwd load-nvmrc
 # Executes tabTitle before each prompt
 add-zsh-hook precmd tabTitle
+
+# Open .zshrc to be edited in VS Code
+alias change="code-insiders ~/.zshrc"
+
+# Re-run source command on .zshrc to update current terminal session with new settings
+alias update="source ~/.zshrc"
