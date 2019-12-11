@@ -25,5 +25,15 @@ source ~/.utilities
 # Use custom aliases
 source ~/.aliases
 
-# Use custom UI/UX Mac configuration
-source ~/.ui_ux
+######################################
+#             UI CHANGES             #
+######################################
+
+# Set the tab title to the current working directory before each prompt
+function tabTitle () {
+  window_title="\033]0;${PWD##*/}\007"
+  echo -ne "$window_title"
+}
+
+# Executes tabTitle before each prompt
+add-zsh-hook precmd tabTitle

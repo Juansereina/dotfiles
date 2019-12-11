@@ -57,3 +57,6 @@ echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa
 eval "$(ssh-agent -s)"
 echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 echo "run 'ssh-add -K ~/.ssh/id_rsa' to add your SSH private key to the ssh-agent and store your passphrase in the keychain"
+
+echo "UI/UX Changes"
+source ~/.ui_ux
