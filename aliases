@@ -11,3 +11,12 @@ alias update="source ~/.zshrc"
 alias l='colorls --group-directories-first --almost-all'
 alias ll='colorls --group-directories-first --almost-all --long'
 alias lc='colorls -lA --sd'
+
+#####################################
+#               NPM                 #
+####################################3
+
+alias test='npm test --'
+alias start='npm start --'
+alias dev='npm dev --'
+alias build='npm build --'
