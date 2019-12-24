@@ -2,3 +2,5 @@
 	email = juansereina@outlook.com
 	name = Juansereina
 	signingkey = D8C33DCA8B678A9F
+[gpg]
+	program = gpg2
