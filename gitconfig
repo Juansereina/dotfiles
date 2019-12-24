@@ -4,3 +4,5 @@
 	signingkey = D8C33DCA8B678A9F
 [gpg]
 	program = gpg2
+[commit]
+	gpgsign = true
